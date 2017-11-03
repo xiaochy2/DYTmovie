@@ -33,3 +33,6 @@ See the [HTML <-> Markdown Quick Reference (Cheat Sheet)][quickref].
 
 [quickref]: https://github.com/mundimark/quickrefs/blob/master/HTML.md
 -->
+<a href="http://52.26.82.166:8080/InstaType/">InstaType</a>
+<a href="http://52.26.82.166:8080/SMS/">Student Management System</a>
+<a href="http://52.26.82.166:8080/fabflix">fabflix Webapp</a>
