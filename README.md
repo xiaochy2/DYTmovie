@@ -6,4 +6,4 @@ username: `b@email.com`
 possword: `b2`
 
 
-![image]（https://grape.ics.uci.edu/wiki/public/attachment/wiki/cs122b-2017-winter/CS122B-overview.png）
+<img src="https://grape.ics.uci.edu/wiki/public/attachment/wiki/cs122b-2017-winter/CS122B-overview.png" alt="Overview">
