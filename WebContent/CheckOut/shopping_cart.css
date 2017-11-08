@@ -1,0 +1,67 @@
+body {
+	background-image: url(shopping_cart.jpg); 
+	background-position:top;
+}
+
+.sousuokuang{
+	margin:auto;
+	font-family:verdana;
+        Color:white;
+        width:70%;
+        position: absolute;
+        left: 450px;
+        top: 180px;
+}
+.biaoti{
+	font-family:verdana;
+        Color:white;
+	font-size:40px;
+}
+#navbar {
+	line-height:30px;
+        float:left;
+        padding:5px; 
+        font-family:verdana;
+        font-size:30px;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:none;
+	position: absolute;
+        left: 30px;
+        top: 230px;}
+a{ 
+    text-decoration:none;
+    Color:white;
+
+}
+.checkoutbox{
+    Color: white;
+    font-family:verdana;
+    position: relative;
+    left: 450px;
+    top: 120px;
+    font-size: 35px;
+}
+.update{
+    position: absolute;
+    left:1200px;
+    top:450px;
+    text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

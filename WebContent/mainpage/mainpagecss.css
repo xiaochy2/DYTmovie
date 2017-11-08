@@ -1,0 +1,87 @@
+body {
+	background-image: url(background.jpg); 
+	background-position:top;
+}
+
+
+#photo-list {
+    /* 6张图片的宽度（包含宽度、padding、border、图片间的留白）
+    计算：6*(100+2*2+1*2+9) - 9
+    之所以减去9是第6张图片的右边留白 */
+    width:1084px;
+    /* 图片的宽度（包含高度、padding、border）
+       计算：100+2*2+1*2  */
+    height:300px;
+    margin:50px auto;
+    overflow:hidden;     /*溢出部份将被隐藏*/
+    border:0px dashed #ccc;
+    position: relative;
+    left: 230px;
+    top: 70px;
+}
+
+#photo-list ul { list-style:none;}
+#photo-list li { float:left; padding-right:9px;}
+#photo-list img { border:0px solid #ddd; background:#fff; padding:2px;}
+
+.biaoti{
+	font-family:verdana;
+        Color:white;
+	font-size:40px;
+}
+#navbar {
+	line-height:30px;
+        float:left;
+        padding:5px; 
+        font-family:verdana;
+        font-size:30px;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:none;
+	position: absolute;
+        left: 30px;
+        top: 230px;}
+a{ 
+    text-decoration:none;
+    Color:white;
+
+}
+.starinformation{
+	font-family:Serif;
+	Color:white;
+        font-size：40px;
+	position: absolute;
+        left: 450px;
+        top: 180px;
+        Text-align:left;
+}
+#poster{
+        height:320px;
+        Width:240px;
+}
+#shoppingcart{
+	position:absolute;
+	left: 500px;
+	top: 280px
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

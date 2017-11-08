@@ -1,0 +1,132 @@
+body {
+	background-image: url(about-image.jpg); 
+	background-position:top;
+}
+
+.sousuokuang{
+	margin:auto;
+	font-family:verdana;
+        Color:white;
+        width:70%;
+        position: absolute;
+        left: 450px;
+        top: 180px;
+}
+.biaoti{
+	font-family:verdana;
+        Color:white;
+	font-size:40px;
+}
+#navbar {
+	line-height:30px;
+        float:left;
+        padding:5px; 
+        font-family:verdana;
+        font-size:30px;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:none;
+	position: absolute;
+        left: 30px;
+        top: 230px;}
+a{ 
+    text-decoration:none;
+    Color:white;
+
+}
+.nianfenkuang{
+	Color:white;
+        width:70%;
+        position: absolute;
+        left: 450px;
+        top: 280px;	
+}
+.check{
+	font-family:verdana;
+        Color:white;
+        text-align: center;
+        position: absolute;
+        left: 450px;
+        top: 230px;        
+}
+.mingxing{
+	margin:auto;
+	font-family:verdana;
+        Color:white;
+        width:70%;
+        position: absolute;
+        left: 450px;
+        top: 380px;
+}
+.daoyan{
+	margin:auto;
+	font-family:verdana;
+        Color:white;
+        width:70%;
+        position: absolute;
+        left: 450px;
+        top: 330px;	
+
+}
+.p6{
+	white-space:nowrap; 
+        width:160px;	
+}
+#buhuanhang1{
+	Color:whitesmoke;
+        font-family:Courier;
+        font-size:15px
+}
+#buhuanhang2{
+	Color:whitesmoke;
+        font-family:courier;
+        font-size:15px
+}
+#buhuanhang3{
+	Color:whitesmoke;
+        font-family:courier;
+        font-size:15px
+}
+.tijiao{
+
+	position: absolute;
+        left: 650px;
+        top: 550px;
+        height:40px;
+    font-size: 10px;
+
+}
+.sousuobiaoge{
+    font-family:verdana;
+    Color:white;
+    width:70%;
+    position: absolute;
+    left: 450px;
+    top: 250px;
+    font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Information</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mainpagecss.css">
+    <style type ="text/css">
+	.suggest{width:388px; background-color: #fff;border:1px solid #999;}
+	.suggest ul {list-style: none; margin: 0;padding: 0;}
+	.suggest ul li {padding: 3px;font-size: 14px;line-height: 25px;}
+	.suggest ul li:hover {text-decoration:underline;background-color: #e5e5e5;}
+	.search_form{position:absolute; left:800px ; background-color: #fff;padding:5px;}
+	</style>
+
+<form class = "search_form" action="../servlet/Search" method="get">
+Search: <input name="A" type="text" id = "search_input" autocomplete="off"  /> <input type="submit" value="search" /><br />
+
+</form>
+
+<div class = "suggest" id ="search_suggest" style = "display:none" >
+<ul id ="search_result">
+<li>sdsdsd</li>
+</ul>
+</div>
+</head>
+<body>
+<h1 class="biaoti">
+     &nbsp;DYTmovie
+</h1>
+<hr style="height:2px"color="white">
+<div id="navbar">
+    <nobr><a href="mainpage.html">Main Page</a></nobr> <br><br>
+    <nobr><a href="../Search/search.html">Advanced Search</a></nobr> <br><br>
+    <nobr><a href="../browse/browse.html">Browsing</a></nobr> <br><br>
+    <nobr><a href="../servlet/shopping_cart">Shopping Cart</a></nobr><br><br>
+    <nobr><a href="../CheckOut/CheckOut.html">Check out</a></nobr><br><br>
+    <nobr><a href="../Login/Login.html">Logout</a></nobr><br><br>
+</div>
+<div id="photo-list">
+    <ul id="scroll">
+        <li><a href="../servlet/movie?ID=156005"><img src="terminator.jpg"  width="220px" height="300px" alt=""/></a></li>
+        <li><a href="../servlet/movie?ID=658001"><img src="Titanic.jpg" width="220px" height="300px" alt=""/></a></li>
+        <li><a href="../servlet/movie?ID=683007"><img src="Fast_and_Furious.jpg" width="220px" height="300px" alt=""/></a></li>
+        <li><a href="../servlet/movie?ID=929"><img src="Spider.jpg" width="220px" height="300px" alt=""/></a></li>
+
+</ul>
+    <script src="MoveEffect.js"></script>
+</div>
+<script src = "http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>  
+$('#search_input').bind('keyup', function(){
+	
+	var content = $('#search_input').val();
+	var url = "../servlet/AjaxSearch?title="+ content;
+	var ajaxRequest;  // The variable that makes Ajax possible!
+
+	try{
+		// Opera 8.0+, Firefox, Safari
+		ajaxRequest = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+	ajaxRequest.onreadystatechange = function(){
+		if(ajaxRequest.readyState == 4){
+			
+			if(ajaxRequest.status == 200){
+				var num = ajaxRequest.responseXML.getElementsByTagName("msg").length;
+				var html = '';
+				for (var i = 0; i<num; i++){
+					html +='<li>'+ajaxRequest.responseXML.getElementsByTagName("msg")[i].childNodes[0].nodeValue+'</li>';
+				}
+				$('#search_result').html(html);
+				$('#search_suggest').css({
+					top:$('#search_input').offset().top+$('#search_input').height()+10,
+					left:$('#search_input').offset().left,
+					position:'absolute'
+				}).show();
+			}
+		}
+	}
+	ajaxRequest.open("GET", url, true);
+	ajaxRequest.send(null);
+	
+	
+})
+$(document).bind('click',function(){
+	$('#search_suggest').hide();
+});
+$(document).delegate('li','click',function(){
+	var keyword = $(this).text();
+	location.href='../servlet/Search?A='+keyword;
+});
+
+
+</script>
+</body>
+</html>

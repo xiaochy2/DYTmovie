@@ -1,0 +1,75 @@
+body {
+	background-image: url(work-6.jpg); 
+	background-position:top;
+}
+
+.sousuokuang{
+	margin:auto;
+	font-family:verdana;
+        Color:white;
+        width:70%;
+        position: absolute;
+        left: 450px;
+        top: 180px;
+}
+.biaoti{
+	font-family:verdana;
+        Color:white;
+	font-size:40px;
+}
+#navbar {
+	line-height:30px;
+        float:left;
+        padding:5px; 
+        font-family:verdana;
+        font-size:30px;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:none;
+	position: absolute;
+        left: 30px;
+        top: 230px;}
+a{ 
+    text-decoration:none;
+    Color:white;
+
+}
+.starinformation{
+	font-family:Serif;
+	Color:white;
+        font-size：40px;
+	position: absolute;
+        left: 450px;
+        top: 180px;
+        Text-align:left;
+}
+#poster{
+        height:320px;
+        Width:240px;
+}
+#shoppingcart{
+	position:absolute;
+	left: 600px;
+	top: 480px
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

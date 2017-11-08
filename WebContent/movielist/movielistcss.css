@@ -1,0 +1,181 @@
+body {
+	background-image: url(about-image.jpg); 
+	background-position:top;
+	background-repeat:no-repeat;
+        background-attachment:fixed
+}
+
+
+.biaoti{
+	font-family:verdana;
+        Color:white;
+	font-size:40px;
+}
+#navbar {
+	line-height:30px;
+        float:left;
+        padding:5px; 
+        font-family:verdana;
+        font-size:30px;
+        margin-left:auto;
+        margin-right:auto;
+        text-decoration:none;
+	position: absolute;
+        left: 30px;
+        top: 230px;
+	Color:white
+	
+}
+a{ 
+    text-decoration:none;
+    Color:white;
+
+}
+.movielisttitle{
+	position: relative;
+        left: 380px;
+        top: 90px;
+	Color:white;
+	font-size:30px;
+}
+#poster{
+	height:160px;
+        Width:120px;
+}
+.searchresult{
+	position: relative;
+        margin-top: 120px;
+	margin-left: 380px;
+	Color:white; 
+	
+	
+}
+
+
+.result1{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.result2{
+    position: absolute;
+    left: 10px;
+    top: 310px;
+}
+.result3{
+    position: absolute;
+    left: 10px;
+    top: 610px;
+}
+.result4{
+    position: absolute;
+    left: 10px;
+    top: 910px;
+}
+.result5{
+    position: absolute;
+    left: 10px;
+    top: 1210px;
+}
+
+.result6{
+    position: absolute;
+    left: 10px;
+    top: 1510px;
+}
+.result7{
+    position: absolute;
+    left: 10px;
+    top: 1810px;
+}
+.result8{
+    position: absolute;
+    left: 10px;
+    top: 2110px;
+}
+.result9{
+    position: absolute;
+    left: 10px;
+    top: 2410px;
+}
+.result10{
+    position: absolute;
+    left: 10px;
+    top: 2710px;
+}
+.result11{
+    position: absolute;
+    left: 10px;
+    top: 3010px;
+}
+
+.result12{
+    position: absolute;
+    left: 10px;
+    top: 3310px;
+}
+.result13{
+    position: absolute;
+    left: 10px;
+    top: 3610px;
+}
+.result14{
+    position: absolute;
+    left: 10px;
+    top: 3910px;
+}
+.result15{
+    position: absolute;
+    left: 10px;
+    top: 4210px;
+}
+
+.result16{
+    position: absolute;
+    left: 10px;
+    top: 4510px;
+}
+.result17{
+    position: absolute;
+    left: 10px;
+    top: 4810px;
+}
+.result18{
+    position: absolute;
+    left: 10px;
+    top: 5110px;
+}
+.result19{
+    position: absolute;
+    left: 10px;
+    top: 5410px;
+}
+.result20{
+    position: absolute;
+    left: 10px;
+    top: 5710px;
+}
+.result21{
+    position: absolute;
+    left: 10px;
+    top: 6010px;
+}
+.biaodan{
+    position: absolute;
+    left: 1000px;
+    top: 260px;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+

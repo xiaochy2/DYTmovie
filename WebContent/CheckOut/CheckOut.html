@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Movie Information</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="CheckOut.css">
+</head>
+<body>
+<h1 class="biaoti">
+    &nbsp;DYTmovie cashier desk
+</h1>
+<hr style="height:2px"color="white">
+<div id="navbar">
+    <nobr><a href="../mainpage/mainpage.html">Main Page</a></nobr> <br><br>
+    <nobr><a href="../Search/search.html">Advanced Search</a></nobr> <br><br>
+    <nobr><a href="../browse/browse.html">Browsing</a></nobr> <br><br>
+    <nobr><a href="../servlet/shopping_cart">Shopping Cart</a></nobr><br><br>
+    <nobr><a href="../Login/Login.html">Logout</a></nobr><br><br>
+</div>
+<div class="checkoutbox">
+    <form action="../servlet/CheckOut" method="get">
+        <table border="0" cellpadding="10">
+            <caption>Check Out Information</caption>
+            <tr>
+            <td>Name:</td>
+            <td>&nbsp;&nbsp;</td>
+            <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+            <td>Card Number:</td>
+            <td>&nbsp;&nbsp;</td>
+            <td><input type="text" name="cardnumber"></td>
+            </tr>
+            <tr>
+            <td>Expiration Date:</td>
+            <td>&nbsp;&nbsp;</td>
+            <td><input type="text" name="expiredate"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td align="right"><input type="submit" value="Checkout"  ></td>
+            </tr>
+</div>
+</body>
+</html>

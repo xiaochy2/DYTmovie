@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="utf-8"> 
+<meta name="description" content="">
+<link href="bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet"> 
+</head>
+<body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="starinformation">
+
+<table align = "center"><tr><td rowspan = "7"><img src = http://us.movies1.yimg.com/movies.yahoo.com/images/hv/photo/movie_pix/twentieth_century_fox/star_wars__episode_iii__revenge_of_the_sith/starwarsepisodeiii_teaserposter.jpg alt="banner not found" width="200" height="280"></td><td height = "40" >id:</td><td>905</td></tr><tr><td height = "40" >title:</td><td>
+
+<a href="#" id="905" class="btn btn-success" rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Popover" onmouseover="over()">Star Wars: Episode III - Revenge of the Sith</a>
+
+
+</td></tr><tr><td height = "40" >year:</td><td>2005</td></tr><tr><td height = "40" >director:</td><td>George Lucas</td></tr><tr><td height = "40" >list of genre:</td>
+<td>
+Science Fiction
+</td></tr>
+<tr><td height = "30" >list of stars:</td><td>
+<a href=star?id=755015>Natalie Portman </a>
+</td></tr>
+<tr><td height = "40">trailer:</td><td>
+<a href =  "http://www.aol.com/starwars/trailer/index.adp?type=lrg">click here to display trailer</a>
+</td></tr></table>
+<a href = "../servlet/movie?id=905&cart=1"><input type="button"  id="shoppingcart" value = "Add to cart" style="height:30px; width:100px; background-color: yellow"></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>
+<script src="bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
+<script>
+
+function over()
+{   
+	
+	var iden = $("#905").attr("id");
+	var url = "servlet/AjaxShow?id="+ iden;
+	var ajaxRequest;  
+
+	try{
+		
+		ajaxRequest = new XMLHttpRequest();
+	} catch (e){
+		
+		try{
+			ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				
+				alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+
+	ajaxRequest.onreadystatechange = function(){
+	
+		if(ajaxRequest.readyState == 4){
+			
+			if(ajaxRequest.status == 200){								
+				
+				var html = 'Title:  '+ ajaxRequest.responseXML.getElementsByTagName("msg")[0].childNodes[0].nodeValue + '<br>';
+				html += 'Year:  '+ ajaxRequest.responseXML.getElementsByTagName("msg")[1].childNodes[0].nodeValue + '<br>';
+				html += 'Director: '+ ajaxRequest.responseXML.getElementsByTagName("msg")[2].childNodes[0].nodeValue + '<br>';
+				html += 'Stars: '+ ajaxRequest.responseXML.getElementsByTagName("msg")[4].childNodes[0].nodeValue + '<br>';
+				html += '<td rowspan = "7"><img src ='+ ajaxRequest.responseXML.getElementsByTagName("msg")[3].childNodes[0].nodeValue +'alt="banner not found" width="200" height="280"></td>'+'<br>';
+				html += '<a href = "https://www.baidu.com"> add to cart</a>';
+				$("#905").attr("data-content",html);
+				$("#905").popover({delay: {show: 100, hide: 5000}});
+			}
+		}
+	}
+	ajaxRequest.open("GET", url, true);
+	ajaxRequest.send(null);
+	
+}
+
+
+</script>
+</body>
+</html>
+
